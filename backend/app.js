@@ -1,4 +1,5 @@
 import express from 'express';
+import cors from 'cors';
 import errorMiddleware from './src/middleware/error.js';
 import { HttpException } from './src/middleware/HttpException.js';
 import moment from 'moment';
@@ -17,6 +18,8 @@ import { totalNumberOfArrivedOrders,
 
 
 const app = express();
+app.use(cors());
+
 const PRODUCERS = ['Antiqua', 'SolarBuddhica', 'Zerpfy'];
 
 const toMoment = (string) => {

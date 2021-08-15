@@ -7,12 +7,12 @@
   "scripts": {
     "dev": "nodemon -r dotenv/config index.js",
     "test": "mocha -r dotenv/config -r mocha-suppress-logs",
-    "test:watch": "mocha --watch",
     "init": "node init.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "cors": "^2.8.5",
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
     "mocha": "^9.0.3",
