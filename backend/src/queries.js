@@ -95,7 +95,6 @@ export const expiredVaccines = (at) => {
 
 export const totalExpired = (at) => {
   const time = at.subtract(30, 'days').format('YYYY-MM-DD HH:mm:ss');
-  console.log(time);
   const queryString = "SELECT SUM(Injections) as count from VaccineOrder WHERE Arrived <= ?;";
   return new Promise((resolve, reject) => {
   pool.query(

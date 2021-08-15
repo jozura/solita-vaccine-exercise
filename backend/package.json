@@ -5,6 +5,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "node -r dotenv/config index.js",
     "dev": "nodemon -r dotenv/config index.js",
     "test": "mocha -r dotenv/config -r mocha-suppress-logs",
     "init": "node init.js"
