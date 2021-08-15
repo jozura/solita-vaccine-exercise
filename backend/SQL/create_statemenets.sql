@@ -16,5 +16,6 @@ CREATE TABLE Vaccination (
   Gender ENUM('male', 'female', 'nonbinary') NOT NULL,
   VaccinationDate DATETIME NOT NULL,
 
-  PRIMARY KEY (Id)
+  PRIMARY KEY (Id),
+  FOREIGN KEY (SourceBottle) REFERENCES VaccineOrder(Id)
 );
