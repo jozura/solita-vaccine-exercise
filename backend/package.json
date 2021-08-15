@@ -6,7 +6,8 @@
   "main": "index.js",
   "scripts": {
     "dev": "nodemon -r dotenv/config index.js",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "mocha -r dotenv/config -r mocha-suppress-logs",
+    "test:watch": "mocha --watch",
     "init": "node init.js"
   },
   "author": "",
@@ -14,8 +15,13 @@
   "dependencies": {
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
+    "mocha": "^9.0.3",
     "moment": "^2.29.1",
     "mysql": "^2.18.1",
     "nodemon": "^2.0.12"
+  },
+  "devDependencies": {
+    "mocha-suppress-logs": "^0.3.1",
+    "supertest": "^6.1.5"
   }
 }
