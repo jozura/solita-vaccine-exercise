@@ -85,7 +85,6 @@ app.get('/expiredBeforeUse', async (req, res, next) => {
     const at = toMoment(req.query.datetime);
     const totalN = await totalExpired(at.clone());
     const usedN = await usedInjectionsFromExpired(at.clone());
-    console.log(totalN, usedN);
     res.json({ vaccineCount: totalN - usedN });
   } catch (err) {
     next(err)
