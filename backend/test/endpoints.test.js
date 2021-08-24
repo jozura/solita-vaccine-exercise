@@ -1,4 +1,4 @@
-import app from '../app.js';
+import app from '../src/app.js';
 import supertest from 'supertest';
 import suppressLogs from 'mocha-suppress-logs';
 

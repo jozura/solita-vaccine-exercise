@@ -101,8 +101,8 @@ const processLineByLine = async (fn, toDb) => {
 
 await createVaccineOrderTable();
 await createVaccinationTable();
-await processLineByLine('./resources/Antiqua.source', orderToDb);
-await processLineByLine('./resources/SolarBuddhica.source', orderToDb);
-await processLineByLine('./resources/Zerpfy.source', orderToDb);
-await processLineByLine('./resources/vaccinations.source', vaccinationToDb);
+await processLineByLine('../resources/Antiqua.source', orderToDb);
+await processLineByLine('../resources/SolarBuddhica.source', orderToDb);
+await processLineByLine('../resources/Zerpfy.source', orderToDb);
+await processLineByLine('../resources/vaccinations.source', vaccinationToDb);
 process.exit(0);

@@ -7,7 +7,7 @@ function errorMiddleware(error,
 {
   const status = error.status || 500;
   const message = error.status === 500 ? 'Internal server error.' :
-    error.message || 'Something went wrong';
+    (error.message ? error.message : 'Something went wrong');
 
   response
     .status(status)
