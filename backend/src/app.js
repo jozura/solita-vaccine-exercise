@@ -48,10 +48,6 @@ app.get('/totalPerProducer', async (req, res, next) => {
   }
 });
 
-app.get('/usable', (req, res, next) => {
-  res.json({usableInjections: 10})  
-});
-
 app.get('/vaccinationsDone', async (req, res, next) => {
   try {
     const at = toMoment(req.query.datetime);
