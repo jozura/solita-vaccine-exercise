@@ -1,11 +1,11 @@
 import queryService from '../services/queryService.js'
 
 const initialState = {
-  "expiredBeforeUse": 0,
-  "executedVaccinations": 0,
-  "expiredBottles": 0,
-  "total": 0,
-  "goingToExpire": 0,
+  "expiredBeforeUse": {},
+  "executedVaccinations": {},
+  "expiredBottles": {},
+  "total": {},
+  "goingToExpire": {},
   "totalPerProducer": {}
 }
 

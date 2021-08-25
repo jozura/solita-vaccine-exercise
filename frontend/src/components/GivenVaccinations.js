@@ -1,7 +1,7 @@
 import { useSelector } from 'react-redux';
 
 const GivenVaccinations = () => {
-  const executedVaccinations = useSelector(state => state.queries['executedVaccinations']['count']); 
+  const executedVaccinations = useSelector(state => state.queries.executedVaccinations.count); 
 
   return (
     <div>

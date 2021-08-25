@@ -1,7 +1,7 @@
 import { useSelector } from 'react-redux';
 
 const ExpiredVaccinations = () => {
-  const expiredBottles = useSelector(state => state.queries['expiredBottles']['count']); 
+  const expiredBottles = useSelector(state => state.queries.expiredBottles.count); 
 
   return (
     <div>

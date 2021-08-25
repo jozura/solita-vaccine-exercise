@@ -1,7 +1,7 @@
 import { useSelector } from 'react-redux';
 
 const GoingToExpire = () => {
-  const goingToExpire = useSelector(state => state.queries['goingToExpire']['count']); 
+  const goingToExpire = useSelector(state => state.queries.goingToExpire.count); 
   
   return (
     <div>
