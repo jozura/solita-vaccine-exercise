@@ -7,6 +7,7 @@ import GivenVaccinations from './components/GivenVaccinations';
 import ExpiredVaccinations from './components/ExpiredVaccinations';
 import ExpiredBeforeUse from './components/ExpiredBeforeUse';
 import GoingToExpire from './components/GoingToExpire';
+import AvailableForUse from './components/AvailableForUse.js';
 import DatePicker from "react-date-picker";
 import { getNumberOfExpiredBottles,
          getNumberOfExecutedVaccinations,
@@ -43,7 +44,7 @@ function App() {
       <GivenVaccinations/>
       <ExpiredVaccinations/>
       <ExpiredBeforeUse/>
-      
+      <AvailableForUse/>
       <h2> Select range </h2>
       <input style={{marginLeft: '5px', width: '50px'}}
              value={range}
